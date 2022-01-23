@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, Text } from "react-native";
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import { 
     IconReturn, 
@@ -7,10 +7,12 @@ import {
     TitleHeader 
 } from './style';
 
-export const Header = () => {
+export const Header = ({ ReturnHome }) => {
     return (
         <ContainerHeader>
-            <IconReturn source={require('../../assets/Return.png')} />
+            <TouchableOpacity onPress={ReturnHome}>
+                <IconReturn source={require('../../assets/Return.png')} />
+            </TouchableOpacity>           
             <TitleHeader>
                 Pedalada
             </TitleHeader>

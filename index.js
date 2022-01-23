@@ -2,8 +2,8 @@
  * @format
  */
 
-import {AppRegistry} from 'react-native';
-import App from './src/pages/monitor';
-import {name as appName} from './app.json';
-
-AppRegistry.registerComponent(appName, () => App);
+ import {AppRegistry} from 'react-native';
+ import App from './src/pages/';
+ import {name as appName} from './app.json';
+ 
+ AppRegistry.registerComponent(appName, () => App);

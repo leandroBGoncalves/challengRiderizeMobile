@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { Image } from "react-native";
 import { 
     BtnInit,
     ContainerMenew, 
@@ -9,7 +9,7 @@ import {
     TextBtn
 } from './style';
 
-export const MenewInit = () => {
+export const MenewInit = ({ InitMinitor }) => {
     return (
         <ContainerMenew>
             <ContentOptionsMenew>
@@ -19,7 +19,7 @@ export const MenewInit = () => {
                 <Image source={require('../../assets/Menew.png')} />
             </ContentOptionsMenew>
             <ContentButton>
-                <BtnInit>
+                <BtnInit onPress={InitMinitor}>
                     <TextBtn>
                         Iniciar Atividade
                     </TextBtn>

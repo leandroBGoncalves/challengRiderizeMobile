@@ -1,17 +1,24 @@
 import React from "react";
-import { View } from "react-native";
+import { StatusBar, View } from "react-native";
 import { Header } from "../components/Header";
 import { Map } from "../components/map";
 import { DescriptionsMonitor } from "../components/monitorDescritptions";
 
-const MonitorDefault = () => {
+export const MonitorDefault = ({ navigation }) => {
+
+    function ReturnHome () {
+        navigation.navigate('Home')
+    }
+
     return (
         <View style={{ flex: 1}}>
-            <Header />
+            <StatusBar 
+            backgroundColor= "#ffffff"
+            barStyle = "dark-content"
+            />
+            <Header ReturnHome={ReturnHome} />
             <Map />
             <DescriptionsMonitor />
         </View>
     )
 }
-
-export default MonitorDefault

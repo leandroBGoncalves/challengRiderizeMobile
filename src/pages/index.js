@@ -1,21 +1,15 @@
-import React, { useEffect, useState } from 'react';
-
-import { Platform, Text, View } from 'react-native';
-import { Header } from '../components/Header';
-import { Map } from '../components/map';
-import { MenewInit } from '../components/MenewIniciarAtividade';
-
-const App = () => {
+import React from 'react';
+import { Routes } from '../Routes';
+import { NavigationContainer } from '@react-navigation/native';
 
 
+const App = (props) => {
 
-    return (
-        <View style={{flex: 1}}>
-            <Header />
-            <Map />
-            <MenewInit />
-        </View>
-    )
-}
+  return (
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
+  );
+ }
 
-export default App
+ export default App

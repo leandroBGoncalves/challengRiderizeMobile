@@ -8,6 +8,7 @@ export const ContainerHeader = styled.View`
     align-items: center;
     justify-content: space-between;
     padding: 13px 20px;
+    background: #ffffff;
 `;
 
 export const IconReturn = styled.Image`
