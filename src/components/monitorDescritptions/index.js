@@ -14,17 +14,7 @@ import {
 } from "./style";
 
 export const DescriptionsMonitor = () => {
-    const [counterTime, setCounterTime] = useState(0);
-    const [initTime, setInitTime] = useState(false);
-
-    function Counter() {
-        setInterval(() => {
-            if (initTime) {
-                let time = counterTime
-                setCounterTime(time + 0.1)
-            }
-            }, 100)
-    }
+    
 
     return (
         <ContainerDescriptionMonitor>
@@ -35,7 +25,7 @@ export const DescriptionsMonitor = () => {
                 Tempo
             </TimeMonitorTitle>
             <TimeMonitor>
-                {counterTime.toFixed(1)}
+                00:00:01
             </TimeMonitor>
             <DoubleInfo>
                 <DistanceBox>
